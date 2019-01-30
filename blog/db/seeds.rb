@@ -10,10 +10,14 @@ end
   category = Category.create!(name: Faker::LeagueOfLegends.summoner_spell)
   end
   
-10.times do
-article = Article.create!(title: Faker::Pokemon.name, content: Faker::LeagueOfLegends.champion, user_id: rand(10), category_id: rand(10))
+10.times do 
+article = Article.create!(title: Faker::Pokemon.name, content: Faker::ChuckNorris.fact, user_id: 136, category_id: 7)
 end
 
-10.times do
-  comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: 4, article_id: 6)
+10.times do 
+  comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: 144, article_id: 74)
+end
+
+10.times do |i|
+like = Like.create!(user_id: 145, article_id: 80)
 end
