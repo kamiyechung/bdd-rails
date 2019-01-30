@@ -11,13 +11,13 @@ end
   end
   
 10.times do 
-article = Article.create!(title: Faker::Pokemon.name, content: Faker::ChuckNorris.fact, user_id: 136, category_id: 7)
+article = Article.create!(title: Faker::Pokemon.name, content: Faker::ChuckNorris.fact, user_id: 1, category_id: 2)
 end
 
 10.times do 
-  comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: 144, article_id: 74)
+  comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: 3, article_id: 4)
 end
 
 10.times do
-like = Like.create!(user_id: 145, article_id: 80)
+like = Like.create!(user_id: 5, article_id: 6)
 end
