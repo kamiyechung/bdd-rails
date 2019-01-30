@@ -18,6 +18,6 @@ end
   comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: 144, article_id: 74)
 end
 
-10.times do |i|
+10.times do
 like = Like.create!(user_id: 145, article_id: 80)
 end
